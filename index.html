@@ -1,48 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FactStream - Real News, Real Fast</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mere Shabd - Thoughts & Quotes Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .caption {
+      padding: 16px;
+      font-style: italic;
+      text-align: center;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #1a1a1a;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav>
-      <h1>FactStream</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Current Affairs</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">World</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    Mere Shabd
+  </header>  <div class="gallery">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?sunset,nature" alt="Quote 1">
+      <div class="caption">
+        "Kuchh shabdon ka asar, sadiyon tak rehta hai."
+      </div>
+    </div><div class="card">
+  <img src="https://source.unsplash.com/600x400/?books,thoughts" alt="Quote 2">
+  <div class="caption">
+    "Mere shabd mere jazbaat ke rang hain."
+  </div>
+</div>
 
-  <main>
-    <section class="hero">
-      <h2>Stay Updated. Stay Aware.</h2>
-      <p>Get latest verified current affairs & headlines in one place.</p>
-    </section>
+<div class="card">
+  <img src="https://source.unsplash.com/600x400/?sky,stars" alt="Quote 3">
+  <div class="caption">
+    "Main chhoti si awaz hoon, lekin andar se gehri."
+  </div>
+</div>
 
-    <section class="news-section">
-      <article>
-        <h3>🚨 Breaking: Parliament passes new bill</h3>
-        <p>The Parliament today cleared a major reform bill. Full coverage inside...</p>
-      </article>
+<!-- Add more cards as needed -->
 
-      <article>
-        <h3>🌍 Global: India-US Strategic Dialogue Begins</h3>
-        <p>High-level talks begin to strengthen trade and defense partnerships.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 FactStream. All rights reserved.</p>
+  </div>  <footer>
+    Copyright &copy; 2025 Mere Shabd. All rights reserved.
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
